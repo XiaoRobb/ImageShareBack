@@ -1,0 +1,16 @@
+server:
+  port: 9018
+
+spring:
+  mvc:
+    static-path-pattern: /ImageShareResources/**
+  resources:
+    static-locations: file:/root/imageshare/ImageShareResources/
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/imageshare?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 123456
+
+resourceUrl: http://116.62.164.228:9018/ImageShareResources/
+filePath: /root/imageshare/ImageShareResources/

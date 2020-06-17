@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      enabled: true
+
+mybatis:
+  type-aliases-package: whu.zhj.imageshare.model
+  mapper-locations: classpath:/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+  type-handlers-package: whu.zhj.imageshare.util
